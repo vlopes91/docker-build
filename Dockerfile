@@ -1,3 +1,3 @@
-FROM apache
+FROM httpd
 
 EXPOSE 80
