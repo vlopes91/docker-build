@@ -1,0 +1,3 @@
+FROM apache
+
+EXPOSE 80
