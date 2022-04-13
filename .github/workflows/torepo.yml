@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag reg.senhadecente.com.br/jenkins/jenkins:$(date +%s)
     - name: Push to repo
-      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }} reg.senhadecente.com.br | docker push reg.senhadecente.com.br/jenkins/jenkins reg.senhadecente.com.br
+      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }} reg.senhadecente.com.br | docker push reg.senhadecente.com.br/jenkins/jenkins
